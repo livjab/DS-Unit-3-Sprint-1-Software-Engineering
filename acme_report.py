@@ -16,38 +16,32 @@ def generate_products(n=30):
         product = Product(name=sample(NOUNS, k=1))
 
         for i in list(range(randint(5, 101))):
-            product.price(product.name[0])
+            product.price
 
         for j in list(range(randint(5, 101))):
-            product.weight(product.name[0])
+            product.weight
 
-        for k in list(range(0.0, 2.5)):
-            product.flammability(product.name[0])
+        for k in list([x / 10.0 for x in range(0, 25)]):
+            product.flammability
 
-    products.append(product)
+        products.append(product)
 
     return products
 
 
 def inventory_report(products):
 
-    unique_products = []
-    average_price = []
-    average_weight = []
-    average_flammability = []
-
+    for product in products:
+        unique_products = len(set(products))
 
     for product in products:
-        return len(set(products))
+        average_price = (sum(product.price) / len(product.price))
 
-    for price in products:
-        return sum(price) / len(price)
+    for product in products:
+        average_weight = (sum(product.weight) / len(product.weight))
 
-    for weight in products:
-        return sum(weight) / len(weight)
-
-    for flammability in products:
-        return sum(flammability) / len(flammability)
+    for product in products:
+        average_flammability = (sum(product.flammability) / len(product.flammability))
 
     print("ACME CORPORATION OFFICIAL INVENTORY REPORT")
     print(f'Number of Unique Products: {unique_products}')
