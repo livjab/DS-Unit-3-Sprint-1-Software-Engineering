@@ -1,4 +1,4 @@
-# Data Science Unit 3 Sprint Challenge 1 
+# Data Science Unit 3 Sprint Challenge 1
 
 ## Software Engineering - the Acme Way
 
@@ -269,6 +269,10 @@ career here, you'll have to answer the following:
   improve this situation?
 
 Answer both of these questions (baseline ~5 sentences) here in text.
+#### answers
+- The most important part of a code review is to make sure the code is readable, reproducable, and functional. Most code is read more often than it is written, so understanding what the code is trying to accomplish should be the top priority.
+
+- Using containers helps to seclude the code you are working on from other code. It creates a smaller environment to write and test code that is separate from everything else.
 
 ### Part 8 - Turn it in!
 
